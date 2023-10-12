@@ -5,7 +5,7 @@ from datetime import date
 from battery.nubbin_battery import NubbinBattery
 from battery.spindler_battery import SpindlerBattery
 
-class TestEngine(unittest.TestCase):
+class TestBattery(unittest.TestCase):
     def test_nubbin(self):
         new_battery = NubbinBattery(date(2020, 1, 1),date(2012, 1, 1))
         self.assertTrue(new_battery.needs_service())
